@@ -1,0 +1,65 @@
+layout:
+  Header: {}
+  Horizontal_Main:
+    id: "main-container"
+    children:
+      Vertical_Sidebar:
+        id: "sidebar"
+        children:
+          Label_Title:
+            text: "AERIS DESIGNER"
+            classes: "sidebar-title"
+          Button_New:
+            label: "→ Neues Projekt"
+            classes: "menu-btn"
+          Button_Open:
+            label: "→ Öffnen"
+            classes: "menu-btn"
+          
+          Label_Tools:
+            text: "DESIGNER TOOLS"
+            classes: "sidebar-title"
+          Button_Layouts:
+            label: "◈ Layout Presets"
+            classes: "menu-btn"
+          Button_Shortcuts:
+            label: "⌨ Shortcuts (?)"
+            classes: "menu-btn"
+
+          Label_Palette:
+            text: "FARBPALETTE"
+            classes: "sidebar-title"
+          Horizontal_Palette:
+            children:
+              Static_C: { id: "color-cyan", text: "C" }
+              Static_M: { id: "color-magenta", text: "M" }
+              Static_B: { id: "color-blue", text: "B" }
+              Static_G: { id: "color-green", text: "G" }
+              Static_R: { id: "color-red", text: "R" }
+      
+      Vertical_Workspace:
+        id: "workspace"
+        children:
+          Container_Hero:
+            id: "welcome-box"
+            children:
+              Label_Hero:
+                text: "AERIS CANVAS v0.1"
+              Static_Hero_Sub:
+                text: "The Agentic Workspace Factory"
+          
+          Input_Project:
+            placeholder: "Wie soll dein neues Meisterwerk heißen?"
+            id: "inp-project"
+          
+          Horizontal_Actions:
+            margin: 2 0
+            children:
+              Button_Cancel:
+                label: "Abbrechen"
+                variant: "error"
+              Button_Create:
+                label: "PROJEKT INITIALISIEREN"
+                variant: "success"
+                id: "btn-create"
+  Footer: {}

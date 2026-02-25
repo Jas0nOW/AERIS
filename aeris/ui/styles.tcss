@@ -1,0 +1,119 @@
+Screen {
+    background: #1a1b26;
+    color: #c0caf5;
+}
+
+/* --- DESIGNER OVERLAYS --- */
+#root-mount {
+    height: 100%;
+    width: 100%;
+}
+
+/* Hover Effekt für den Canvas Bereich */
+#blueprint-layer Static:hover, 
+#blueprint-layer Button:hover, 
+#blueprint-layer Input:hover,
+#blueprint-layer Container:hover {
+    border: double #7aa2f7;
+    background: #24283b;
+}
+
+/* --- SIDEBAR & TOOLBOX --- */
+#sidebar {
+    width: 32;
+    border-right: vline #3b4261;
+    padding: 1 1;
+    background: #16161e;
+}
+
+.sidebar-title {
+    text-style: bold;
+    color: #bb9af7;
+    margin: 1 0;
+    padding-left: 1;
+}
+
+.menu-btn {
+    width: 100%;
+    margin-bottom: 0;
+    background: #16161e;
+    color: #7982a9;
+    border: none;
+    padding-left: 2;
+}
+
+.menu-btn:hover {
+    color: #7aa2f7;
+    background: #24283b;
+    text-style: bold;
+}
+
+/* --- FARBPALETTE (PIPETTE) --- */
+.color-item {
+    margin: 0 1;
+    padding: 0 1;
+    height: 1;
+}
+
+#color-cyan { background: #7dcfff; color: #1a1b26; }
+#color-magenta { background: #bb9af7; color: #1a1b26; }
+#color-blue { background: #7aa2f7; color: #1a1b26; }
+#color-green { background: #9ece6a; color: #1a1b26; }
+#color-red { background: #f7768e; color: #1a1b26; }
+
+/* --- MAIN WORKSPACE --- */
+#workspace {
+    width: 1fr;
+    padding: 2 4;
+    background: #1a1b26;
+}
+
+#welcome-box {
+    border: double #7aa2f7;
+    padding: 2 4;
+    content-align: center middle;
+    text-align: center;
+    background: #24283b;
+    color: #c0caf5;
+    margin-bottom: 2;
+}
+
+#welcome-box Label {
+    color: #7dcfff;
+    text-style: bold italic;
+}
+
+Input {
+    border: tall #3b4261;
+    background: #16161e;
+    color: #c0caf5;
+}
+
+Input:focus {
+    border: tall #7aa2f7;
+}
+
+/* --- FOOTER & STATUS --- */
+Footer {
+    background: #16161e;
+    color: #3b4261;
+}
+
+#inspector-bar {
+    background: #16161e;
+    color: #565f89;
+    padding: 0 1;
+    dock: bottom;
+    height: 1;
+    border-top: solid #3b4261;
+    text-style: italic;
+}
+
+#error-box {
+    background: #f7768e;
+    color: #1a1b26;
+    padding: 2 4;
+    border: thick #1a1b26;
+    text-align: center;
+    text-style: bold;
+}

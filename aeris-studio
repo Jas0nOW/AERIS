@@ -1,0 +1,7 @@
+#!/bin/bash
+SOURCE_DIR="/home/jannis/Schreibtisch/Work-OS/40_Products/AERIS"
+VENV_PYTHON="$SOURCE_DIR/.venv/bin/python3"
+cd "$SOURCE_DIR"
+export PYTHONPATH="$SOURCE_DIR"
+# Wir nutzen textual via python Modulaufruf, um sicherzugehen dass die venv-Pakete geladen werden
+"$VENV_PYTHON" -m textual run --dev aeris/ui/factory.py

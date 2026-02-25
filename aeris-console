@@ -1,0 +1,5 @@
+#!/bin/bash
+SOURCE_DIR="/home/jannis/Schreibtisch/Work-OS/40_Products/AERIS"
+cd "$SOURCE_DIR"
+source .venv/bin/activate
+textual console
