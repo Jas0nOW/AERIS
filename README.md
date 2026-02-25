@@ -16,8 +16,8 @@ AERIS ist kein Editor-Fork. Es ist ein **Workspace-Orchestrator**, der existiere
 
 ## Installation (Entwickler)
 ```bash
-git clone https://github.com/jannis/aeris.git
-cd aeris
+git clone https://github.com/Jas0nOW/AERIS.git
+cd AERIS
 pip install -e .
 ```
 
