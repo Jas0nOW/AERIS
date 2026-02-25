@@ -1,56 +1,69 @@
 <div align="center">
-  <h1>🌌 AERIS Studio / The Canvas</h1>
-  <p><strong>The Ultimate Agentic Workspace & Orchestrator Engine.</strong></p>
-  <a href="https://github.com/Jas0nOW/AERIS">View Repository</a>
+
+# AERIS Studio
+
+**Agentic workspace orchestrator for terminal-first development**
+
+[![Status](https://img.shields.io/badge/status-paused-yellow)](./docs/04_plan/HANDOFF.md)
+[![Python](https://img.shields.io/badge/python-3.10%2B-blue)](./pyproject.toml)
+[![License](https://img.shields.io/badge/license-MIT-green)](./LICENSE)
+
 </div>
 
----
+AERIS is a lightweight orchestration layer for agent-driven development.  
+It does not replace your editor. It coordinates terminals, models, and workflows in one fast Textual UI.
 
-AERIS is a high-performance **TUI (Terminal User Interface)** application that merges the groundbreaking concepts of **Antigravity**, **Cursor**, and **Windsurf** into a single, cohesive, and incredibly lightweight command center.
+## Why AERIS
 
-> **Current Status:** PAUSED (Analysis Mode pending Visual Designer Integration).
+- Agent swarm execution in parallel terminal panes
+- Layout orchestration (grids, columns, task-specific workspaces)
+- Live feedback loops from terminal output to agent actions
+- Native integration path to the WANDA hub (`localhost:3000`)
+- Blueprint-first UI composition with YAML + TCSS
 
-## 💡 Core Philosophy
+## Architecture
 
-AERIS is *not* a code editor fork (like Cursor/Windsurf). It is a pure **Workspace Orchestrator**. 
+| Layer | Responsibility |
+| --- | --- |
+| `aeris/cli.py` | CLI entrypoint and launch flow |
+| `aeris/ui/` | Textual app, widgets, styles, blueprints |
+| `aeris/manager/` | Runtime/session orchestration |
+| `aeris/auth/` | Auth and provider bridge helpers |
+| `scripts/` | Debug and validation commands |
 
-Instead of reinventing the text editor, AERIS focuses entirely on coordinating existing tools (Terminals, Editors, AI Models) to create a seamless, agent-driven workflow. It acts as the visual frontend ("The Canvas") where blueprints (YAML) and styles (TCSS) are live-rendered.
-
-## ✨ Key Features
-
-- **Agent Swarm Manager:** Execute and monitor multiple autonomous AI subagents simultaneously in dedicated terminal panes (Antigravity-Style).
-- **Dynamic IDE Manager:** Flexible and modular setup with varying terminal layouts (Grids, Columns, Custom splits) automatically arranged on project start.
-- **Cascade-Flow (Real-Time Code Awareness):** Terminal outputs and code changes are monitored in real-time, allowing agents to instantly catch, diagnose, and fix errors automatically (Windsurf-Style).
-- **WANDA Microservice Integration:** Seamlessly connects to the local WANDA Central Hub (`localhost:3000`) to utilize the OAuth Identity Bridge, accessing Gemini subscriptions securely without exposing API keys.
-- **Massive Skill Library:** Fully compatible with the execution of over 900+ customized Antigravity skills.
-- **Visual Design First:** Built with Python `Textual` (`TCSS`), ensuring a fast, aesthetic, and responsive terminal-based UI layout.
-
-## 🚀 Quick Start (Development Space)
+## Quick Start
 
 ```bash
-# Clone the repository
-git clone https://github.com/Jas0nOW/AERIS.git
-cd AERIS
-
-# Install the package globally in editable mode
+python -m venv .venv
+source .venv/bin/activate
+pip install -U pip
 pip install -e .
 
-# Launch the AERIS interface
+# Launch UI
 aeris launch
 ```
 
-## 🐛 Debugging & Validation
+## Validation
 
-### Start with Debugging Enabled
 ```bash
+./scripts/validate_basics.sh
 ./scripts/start_debug.sh
 ```
 
-### System Validation
-```bash
-# Verify core logic and WANDA hub connections
-./scripts/validate_basics.sh
-```
+## Documentation
 
----
-*Built under the JANNIS PROTOCOL — The Visual Developer King.*
+- [Project Overview](./docs/00_overview/PROJECT.md)
+- [Milestones](./docs/04_plan/MILESTONES.md)
+- [Tasks](./docs/04_plan/TASKS.md)
+- [Handoff](./docs/04_plan/HANDOFF.md)
+- [Vision](./docs/VISION.md)
+
+## Security and Ops Notes
+
+- Keep credentials in local `.env` files only
+- Do not commit runtime logs or session artifacts
+- Use the validation script before pushing changes
+
+## License
+
+MIT. See [LICENSE](./LICENSE).
