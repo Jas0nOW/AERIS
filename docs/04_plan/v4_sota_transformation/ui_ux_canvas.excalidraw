@@ -1,0 +1,92 @@
+{
+  "elements": [
+    {
+      "id": "ui-1",
+      "type": "rectangle",
+      "x": 50,
+      "y": 50,
+      "width": 800,
+      "height": 600,
+      "strokeColor": "#334155",
+      "backgroundColor": "#0f172a",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "groupIds": [],
+      "roundness": { "type": 2 },
+      "seed": 11111,
+      "version": 1,
+      "versionNonce": 11111,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1,
+      "link": null,
+      "locked": false,
+      "text": "AERIS STUDIO V2.0 (SOTA UI)"
+    },
+    {
+      "id": "ui-2",
+      "type": "rectangle",
+      "x": 70,
+      "y": 70,
+      "width": 200,
+      "height": 560,
+      "strokeColor": "#1e293b",
+      "backgroundColor": "#1e293b",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "groupIds": [],
+      "roundness": null,
+      "seed": 22222,
+      "version": 1,
+      "versionNonce": 22222,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1,
+      "link": null,
+      "locked": false,
+      "text": "SIDEBAR
+- Blueprints
+- States
+- Palette
+- History"
+    },
+    {
+      "id": "ui-3",
+      "type": "rectangle",
+      "x": 280,
+      "y": 70,
+      "width": 550,
+      "height": 560,
+      "strokeColor": "#020617",
+      "backgroundColor": "#020617",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "groupIds": [],
+      "roundness": null,
+      "seed": 33333,
+      "version": 1,
+      "versionNonce": 33333,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1,
+      "link": null,
+      "locked": false,
+      "text": "VISUAL CANVAS
+(Live TUI Preview / React Components)"
+    }
+  ],
+  "appState": {
+    "theme": "dark",
+    "viewBackgroundColor": "#121212"
+  },
+  "files": {}
+}

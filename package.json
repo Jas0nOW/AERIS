@@ -1,0 +1,10 @@
+{
+  "name": "aeris-monorepo",
+  "private": true,
+  "description": "AERIS - The Supreme Orchestrator (AI-IDE & CLI)",
+  "scripts": {
+    "dev": "pnpm --recursive run dev",
+    "build": "pnpm --recursive run build",
+    "test": "pnpm --recursive run test"
+  }
+}

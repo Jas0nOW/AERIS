@@ -1,0 +1,13 @@
+{
+  "name": "@aeris/core",
+  "version": "0.1.0",
+  "private": true,
+  "description": "AERIS Supreme Orchestrator Core Engine",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "jest"
+  }
+}

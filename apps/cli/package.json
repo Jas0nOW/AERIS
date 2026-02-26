@@ -1,0 +1,20 @@
+{
+  "name": "@aeris/cli",
+  "version": "0.1.0",
+  "private": true,
+  "description": "AERIS Supreme Orchestrator CLI",
+  "bin": {
+    "aeris": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@aeris/core": "workspace:*",
+    "@aeris/memory": "workspace:*",
+    "commander": "^11.1.0",
+    "chalk": "^5.3.0"
+  }
+}
